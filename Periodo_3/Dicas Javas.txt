@@ -1,0 +1,17 @@
+Orderar array Tipo do atributo String
+Arrays.sory(meuarray,(a,b)-> a.getNome().compareTo(b.getNome());
+
+
+Orderar array Tipo do atributo Int, Double, Float
+Arrays.sory(meuarray,(a,b)-> Integer.compare(a.getIdade(),b.getIdade())
+
+
+JOptionPane{
+showMessageDialog(null, A mensagem que deve ser exibida ao usuário, O título da caixa de texto, Que tipo de mensagem)
+
+
+resposta = JOptionPane.showInputDialog(null,
+"Deseja finalizar o programa?",
+"Finalização",
+JOptionPane.PLAIN_MESSAGE
+}
