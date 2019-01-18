@@ -10,8 +10,6 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
-import com.sun.media.jfxmedia.events.NewFrameEvent;
-
 import classe.Bar_Vende_Vebida;
 import classe.Bares;
 import classe.Bebidas;
@@ -59,6 +57,7 @@ public class TelaBares extends JDialog {
 			return false;
 		}
 	};
+	
 	public TelaBares() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(
 				"C:\\Users\\lucas\\Documents\\Codigo Fonte\\Fapam\\poo_lucasfelipecosta\\Periodo_4\\2018-11-19 Trabalho Final Poo2\\imagens\\icons8-mini-bar-16.png"));
@@ -178,7 +177,7 @@ public class TelaBares extends JDialog {
 					bar.setFantasias(txtFantasia.getText());
 					bar.setCapacidade((int) txtCapacidade.getValue());
 				} catch (Exception e1) {
-					JOptionPane.showMessageDialog(null, e1.getMessage(), "Atenção", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, e1.getMessage(), "Atenï¿½ï¿½o", JOptionPane.INFORMATION_MESSAGE);
 					return;
 				}
 				for(int x= 0; listBar_Vende_Vebida.size() > x ;x++ ) {
@@ -205,11 +204,11 @@ public class TelaBares extends JDialog {
 		btnExcluir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (bar == null) {
-					JOptionPane.showMessageDialog(null, "Nao possui bar para excluir", "Atenção",
+					JOptionPane.showMessageDialog(null, "Nao possui bar para excluir", "Atenï¿½ï¿½o",
 							JOptionPane.INFORMATION_MESSAGE);
 					return;
 				}
-				if (JOptionPane.showConfirmDialog(null, "Confirma a exclusão do bar " + bar.getNome() + "?", "Confirma",
+				if (JOptionPane.showConfirmDialog(null, "Confirma a exclusï¿½o do bar " + bar.getNome() + "?", "Confirma",
 						JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 					try {
 						interfaceBar.remove(bar);
