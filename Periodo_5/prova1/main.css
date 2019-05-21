@@ -1,0 +1,42 @@
+#titulo {
+    text-align: center;
+}
+
+#fotocarro {
+    width: 100%;
+}
+
+.desc {
+    margin: 0;
+    margin-top: 15px;
+}
+
+#valorcar {
+    color: orange;
+    font-size: xx-large;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.info {
+    margin: 0;
+}
+
+button {
+    size: 50px;
+    margin-left: 50px
+}
+
+form {
+    align-content: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.invalid {
+    border: 1px solid red;
+}

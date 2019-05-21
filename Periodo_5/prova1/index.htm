@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Venda e Troca de Veiculos</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <H1 id="titulo">Venda e troca de Veiculos</H1>
+
+    <H2>Fiat Palio Sporting 1.6 16V (Flex)</H2>
+    <div class="row">
+        <div class="col col-lg-3">
+            <img id="fotocarro" src="https://img1.icarros.com/dbimg/imgadicionalanuncio/5/127157396_1">
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h3 class="info">Ano</h3>
+                </div>
+                <div class="col">
+                    <h3 class="info">km</h3>
+                </div>
+                <div class="col">
+                    <h3 class="info">Cor</h3>
+                </div>
+                <div class="col">
+                    <h3 class="info">Cambio</h3>
+                </div>
+                <div class="col">
+                    <h3 class="info">Fabricante</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="info">2017/2017</h4>
+                </div>
+                <div class="col">
+                    <h4 class="info">60.000</h4>
+                </div>
+                <div class="col">
+                    <h4 class="info">Prata</h4>
+                </div>
+                <div class="col">
+                    <h4 class="info">Manual</h4>
+                </div>
+                <div class="col">
+                    <a href="https://www.fiat.com.br/">
+                        <h4 class="info">Fiat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="desc">Descrição</h4>
+                <br>
+                <p>Veículo de procedência e com GARANTIA DE UM ANO*. Manual e chave reserva, baixa km, conexão usb, interface bluetooth, vidros elétricos nas portas dianteiras e traseiras, volante multifuncional, comando interno da tampa do tanque, encosto
+                    de cabeça para todos os ocupantes, enfim, veículo para clientes exigentes, venha conferir!!! Parcelamos sua entrada no cartão. CONSULTE CONDIÇÕES*. Preço válido somente para venda à vista, no caso de trocas, consulte condições. Outros
+                    opcionais: Encosto de cabeça traseiro, Porta-copos, Comando de áudio e telefone no volante, Banco bi-partido, Pára-choques na cor do veículo</p>
+            </div>
+        </div>
+        <div class="col col-lg-2">
+            <h3 id="valorcar">R$ 47.000,00</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <button class="btn" id="comprar" type="button" onclick="compra()">Comprar</button>
+        <button class="btn" id="trocar" type="button" onclick="trocar()">Trocar</button>
+    </div>
+    <br>
+    <div class="row">
+        <form action="#" method="POST" onsubmit="return validarCampos(this)">
+            <div id="alert" class="alert alert-danger hidden" role="alert">
+            </div>
+            <input id="txttipo" type="hidden">
+            <div class="row" id="dadoscliente">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="txtNome">Nome</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="txtNome" type="text">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="txtCPF">CPF</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="txtCPF" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row hidden" id="dadoscompra">
+                <div class="form-group row">
+                    <label class="col-sm col-form-label" for="txtValor">Valor da Oferta</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="txtValor" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row hidden" id="dadostroc">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="txtplaca">Placa</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="txtplaca" type="text" data-mask="###-0000">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="txtAno">Ano</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="txtAno" type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn" id="Oferta" type="submit" onclick="Oferta()">Enviar Oferta</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
