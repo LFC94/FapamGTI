@@ -1,0 +1,6 @@
+//Iniciar projeto
+laravel new **projeto
+
+//Routes
+Defina as rotas que serao utilizadas no projeto ela e dividida em 
+API 
